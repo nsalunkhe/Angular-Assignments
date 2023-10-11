@@ -1,0 +1,36 @@
+.item-list {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    
+  }
+  
+  .item-list input {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .item-list button {
+    padding: 5px 10px;
+    margin-right: 5px;
+  }
+  
+  .item-list button:last-child {
+    margin-right: 0;
+  }
+  input{
+    justify-content: center;
+    width: 300px;
+    height:50px;
+    font-size: larger;
+    text-align: center;
+    border-radius: 10px;
+    margin:auto
+  }
+  button{
+    width:auto;
+    height: 50px;
+    background-color: rgb(65, 88, 156);
+    color: white;
+    border: none;
+  }

@@ -1,0 +1,15 @@
+<div class="item-list">
+    <form (submit)="addTask()">
+      <input type="text" [(ngModel)]="newTask" name="newTask" placeholder="Add a new task" />
+      <button type="submit">Add Task</button>
+    </form>
+  
+    <div *ngFor="let task of tasks">
+      <h1 *ngIf="!task.editing">{{ task.text }}</h1>
+      <input *ngIf="task.editing" [(ngModel)]="task.text" />
+      <button (click)="toggleEdit(task)">Edit</button>
+      <button (click)="deleteTask(task)">Delete</button>
+      <button (click)="updateTask(task)" *ngIf="task.editing">Update</button>
+    </div>
+  </div>
+  
