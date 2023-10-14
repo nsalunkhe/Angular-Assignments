@@ -1,0 +1,26 @@
+nav {
+    background-color: #333333; /* Background color of the navbar */
+    color: #d6dbdf; /* Text color */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-button {
+    padding: 10px 20px;
+    margin-left: 10px; /* Spacing between buttons */
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgb(49, 126, 208);
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth transition effect */
+  
+  }
+  
+  .nav-button:hover {
+    background-color: #fff; /* Background color on hover */
+    color: #333; /* Text color on hover */
+    border-color: #333; /* Border color on hover */
+  }
+  

@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2014/11/21/03/24/mountains-540115_640.jpg');
+    background-size: cover; /* Adjust as needed to cover the entire viewport */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixed background */
+    /* Additional styles to ensure the content is readable */
+    color: #fff; /* Set appropriate text color */
+  }
