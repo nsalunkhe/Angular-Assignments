@@ -1,3 +1,8 @@
+
+
+The Deployed Link of this assignment : https://neon-kelpie-5039ec.netlify.app/
+
+
 In this app we are going to explore the use of services and directives.
 Q1.What are Angular Directives?
 Ans: Directives are used to add behavior,manipulate the DOM or conditionally render elements in Angular Applications
