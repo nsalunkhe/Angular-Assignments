@@ -1,0 +1,91 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    font-size: 1.2em;
+  }
+  
+  .card p {
+    margin: 0.5em 0;
+  }
+  
+  .card button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background-color: #cc0000;
+  }
+  /* Style for the select dropdown */
+#categorySelect {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 200px; /* Adjust max-width as needed */
+  }
+  
+  /* Style for the search input */
+  #searchInput {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 200px; /* Adjust max-width as needed */
+  }
+  
+  /* Optional: Hover effect for the search input */
+  #searchInput:hover {
+    border-color: #333;
+  }
+
+.pagination button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: none;
+    background-color: #0f6ee2;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .pagination button:hover {
+    background-color: #0936a8;
+  }
+  
+  .pagination button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+h2{
+    text-align: center;
+}
+.filter{
+    display: flex;
+    margin: auto;
+    justify-content:center;
+
+}
+label{
+    font-size: larger;
+    margin-right: 10px;
+}
+select{
+    margin-right: 10px;
+}

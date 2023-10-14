@@ -1,0 +1,29 @@
+<h2>Item List</h2>
+
+<div class="filter">
+  <label for="categorySelect">Filter by Category:</label>
+  <select id="categorySelect" [(ngModel)]="selectedCategory" (change)="filterItems()">
+    <option value="">All Categories</option>
+    <option *ngFor="let category of getUniqueCategories()" [value]="category">{{ category }}</option>
+  </select>
+  <label for="searchInput">Search Items:</label>
+  <input type="text" id="searchInput" [(ngModel)]="searchQuery" placeholder="Search for items" (input)="filterItems()">
+</div>
+
+<div class="card-container">
+  <div class="card" *ngFor="let item of filteredItems">
+    <h3>{{ item.name }}</h3>
+    <p>{{ item.description }}</p>
+    <p>Price: {{ item.price | currency }}</p>
+    <p>Category: {{ item.category }}</p>
+    <app-star-rating [rating]="item.rating"></app-star-rating>
+    <button (click)="deleteItem(item)">Delete</button>
+  </div>
+</div>
+
+<!-- Pagination controls -->
+<div class="pagination">
+  <button [disabled]="currentPage === 1" (click)="previousPage()">Previous</button>
+  <span>Page {{ currentPage }}</span>
+  <button [disabled]="filteredItems.length < itemsPerPage" (click)="nextPage()">Next</button>
+</div>

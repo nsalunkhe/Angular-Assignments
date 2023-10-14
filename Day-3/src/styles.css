@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/11/19/28/fern-1250903_1280.jpg'); /* Replace with the actual path to your image */
+    background-size: cover; /* Adjusts the size of the background image to cover the entire element */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-attachment: fixed; /* Ensures the background image remains fixed while scrolling */
+    color:white
+  }
+  
